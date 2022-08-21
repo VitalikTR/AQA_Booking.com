@@ -2,7 +2,7 @@ import { defineConfig } from 'cypress'
 
 export default defineConfig({
   env: {
-    UI_HOST: 'https://www.saucedemo.com/',
+    UI_HOST: 'https://www.booking.com/',
   },
   chromeWebSecurity: false,
   watchForFileChanges: false,
