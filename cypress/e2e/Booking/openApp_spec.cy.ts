@@ -1,7 +1,7 @@
-import {HomePage} from "../../support/pageObject_Booking/homePage";
+import {StaysPage} from "../../support/pageObject_Booking/staysPage";
 
 describe('Test suite for checking a user opened the application', () => {
-    let homePage = new HomePage();
+    let homePage = new StaysPage();
 
     before('Opened the application', () => {
         cy.log('Start')
