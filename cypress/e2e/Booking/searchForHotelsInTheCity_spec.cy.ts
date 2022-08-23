@@ -12,22 +12,14 @@ describe('Test suite search for hotels in the city', () => {
 
         it('Verify a user can search for hotels in the city', () => {
             staysPage
-                .enterCityToTheSearch(city.cityStays);
-            staysPage
-                .clickOpenCalendar().should('be.visible');
-            staysPage
+                .enterCityToTheSearch(city.cityStays)
+                .clickOpenCalendar()
                 .clickSelectMonthCheckIn()
-            staysPage
                 .clickSelectMonthCheckIn()
-            staysPage
                 .clickSelectMonthCheckIn()
-            staysPage
                 .clickSelectDateCheckIn()
-            staysPage
                 .clickSelectDateCheckOut()
-            staysPage
                 .clickSearchButton()
-           searchResultsStaysPage
                 .getSearchLabel().then((element) =>{cy.log(element.text())})
         });
 

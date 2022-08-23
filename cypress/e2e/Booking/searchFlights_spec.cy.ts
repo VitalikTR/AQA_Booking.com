@@ -14,24 +14,17 @@ describe('Test suite search flights', () => {
             flightsPage
                 .waitForSeconds(1)
                 .clickChangeTripLabel()
-            flightsPage
                 .clickWhereFromField()
-            flightsPage
                 .clickClearInput()
-            flightsPage
                 .waitForSeconds(1)
                 .enterWhereFromCity(city.cityFlights)
-            flightsPage
                 .choiceCity().click()
             flightsPage
                 .enterWhereToCity((city.cityFlights))
-            flightsPage
                 .choiceCity().click()
             flightsPage
                 .clickOpenCalendar()
-            flightsPage
                 .clickSelectDateDepart()
-            flightsPage
                 .clickSearchButton()
         });
 

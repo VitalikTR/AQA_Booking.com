@@ -15,31 +15,38 @@ export class FlightsPage extends  basePage {
     public dateDepartInSearchResults() { return cy.xpath("//div[@data-testid='flight_card_segment_departure_date']"); }
 
     public clickChangeTripLabel(){
-        return this.tripLabel().click()
+        this.tripLabel().click()
+            return this
     }
 
     public clickWhereFromField() {
-        return this.whereFrom().click();
+        this.whereFrom().click();
+            return this
     }
 
     public clickClearInput() {
-        return this.clearInput().click();
+        this.clearInput().click();
+            return this
     }
 
     public enterWhereFromCity(cityFrom) {
-        return this.whereFromInput().type(cityFrom.cityNameFrom);
+        this.whereFromInput().type(cityFrom.cityNameFrom);
+            return this
     }
 
     public enterWhereToCity(cityTo) {
-        return this.whereToInput().type(cityTo.cityNameTo);
+        this.whereToInput().type(cityTo.cityNameTo);
+            return this
     }
 
     public clickOpenCalendar() {
-        return this.dateDepartField().click();
+        this.dateDepartField().click();
+            return this
     }
 
     public clickSelectDateDepart() {
-        return this.dateDepart().click()
+       this.dateDepart().click()
+            return this
     }
 
     public clickSearchButton(){

@@ -34,43 +34,40 @@ export class StaysPage extends basePage {
         return this.languageApp();
     }
 
-    public getCityNameInput() {
-        return this.cityNameInput()
-    }
-
     public enterCityToTheSearch(city) {
-        return this.getCityNameInput().type(city.cityName)
+        this.cityNameInput().type(city.cityName)
+            return this
     }
 
     public clickOpenCalendar() {
-        return this.checkField().click();
+        this.checkField().click();
+            return this
     }
 
     public clickSelectMonthCheckIn() {
-        return this.nextMonthButton().click();
+        this.nextMonthButton().click();
+            return this
     }
 
     public clickSelectDateCheckIn() {
-        return this.dateStartField().click()
+        this.dateStartField().click()
+            return this
     }
 
     public clickSelectDateCheckOut() {
-        return this.dateEndField().click()
-    }
-
-    public getSearchButton(){
-        return this.searchButton()
+        this.dateEndField().click()
+            return this
     }
 
     public clickSearchButton(){
-        this.getSearchButton().click()
+        this.searchButton().click()
         this.waitForSeconds(1)
-        return new SearchResultsStaysPage()
+            return new SearchResultsStaysPage()
     }
 
     public clickOpenFlightsPage() {
         this.flightsLink().click()
-        return new FlightsPage()
+            return new FlightsPage()
     }
 }
 
