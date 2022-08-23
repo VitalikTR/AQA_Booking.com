@@ -14,10 +14,7 @@ describe('Test suite search for hotels in the city', () => {
             staysPage
                 .enterCityToTheSearch(city.cityStays)
                 .clickOpenCalendar()
-                .clickSelectMonthCheckIn()
-                .clickSelectMonthCheckIn()
-                .clickSelectMonthCheckIn()
-                .clickSelectDateCheckIn()
+                .checkMonth()
                 .clickSelectDateCheckOut()
                 .clickSearchButton()
                 .getSearchLabel().then((element) =>{cy.log(element.text())})
