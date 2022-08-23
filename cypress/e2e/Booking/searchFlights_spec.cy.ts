@@ -28,10 +28,10 @@ describe('Test suite search flights', () => {
                 .clickSearchButton()
         });
 
-    it('Checking search results', () => {
-        flightsPage
-            .verifyDateDepartInSearchResults().each((element) => {
-            expect(element.text()).to.be.contain('30')})
-    });
+        it('Checking search results', () => {
+            flightsPage
+                .verifyDateDepartInSearchResults().each((element) => {
+                expect(element.text()).to.be.contain('30')})
+        });
 
 });
